@@ -55,6 +55,7 @@ public String cookie(@CookieValue("JSESSIONID")String cookieVal) {
 	}
 	
 	@GetMapping("/secondCookie")
+	//making cookie by own customization
 	@ResponseBody
 public String secondCookie(@CookieValue("NewCookie")String cookieVal) {
 		//public String pathVar(@CookieValue("JSEESIONId")String cookieVal) {
